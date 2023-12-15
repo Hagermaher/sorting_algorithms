@@ -55,12 +55,12 @@ void counting_sort(int *array, size_t size)
 
 	for (w = 0; w < (int)size; w++)
 	{
-		sortd[count[array[w]] - 1] = array[w];
+		sortd[cunt[array[w]] - 1] = array[w];
 		cunt[array[w]] -= 1;
 	}
 
 	for (w = 0; w < (int)size; w++)
-		array[w] = sorted[w];
+		array[w] = sortd[w];
 
 	free(sortd);
 	free(cunt);
